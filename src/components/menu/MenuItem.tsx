@@ -44,7 +44,7 @@ export function MenuItem({ item, onAddToCart }: MenuItemProps) {
   const getQuantityDisplay = () => {
     if (!item.quantity_limit) return t('item.noLimit');
     if (remainingQuantity === 0) return t('item.soldOut');
-    return `${remainingQuantity} ${t('item.remaining')}`;
+    return `${t('Remaining: ')} ${remainingQuantity} `;
   };
 
   return (
